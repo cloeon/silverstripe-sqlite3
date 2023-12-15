@@ -60,6 +60,7 @@ class SQLite3Query extends Query
             $c++;
         }
         $this->handle->reset();
+        $this->getIterator()->rewind();
         return $c;
     }
 
